@@ -1,0 +1,45 @@
+<template>
+  <el-row class="">
+    <el-col :span="18">
+      <el-col class="text-center" style="cursor:pointer">
+        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
+      </el-col>
+      <el-menu default-active="2" class="el-menu-vertical-demo" >
+        <el-sub-menu index="1">
+          <template #title>
+            <!-- <router-link ">Home -->
+              <font-awesome-icon class="me-2" :icon="['fas', 'users']" />
+              <span>Account</span>
+            <!-- </router-link> -->
+          </template>
+          <router-link :to="{ name: 'admin-users' }">
+            <el-menu-item index="1-1"> 
+              <font-awesome-icon class="me-2" :icon="['fas', 'user-plus']" />
+              Create account
+            </el-menu-item>
+          </router-link>
+          <el-menu-item index="1-2">
+            <font-awesome-icon class="me-2" :icon="['fas', 'list']" />
+            Manage account
+          </el-menu-item>
+          <el-menu-item index="1-3">
+            <font-awesome-icon class="me-2" :icon="['fas', 'gear']" />
+            Settings
+          </el-menu-item>
+        </el-sub-menu>
+        <el-menu-item index="2">  
+          <font-awesome-icon class="me-2" :icon="['fas', 'user-gear']" />
+          <span>Users</span>
+        </el-menu-item>
+        <el-menu-item index="3">
+          <font-awesome-icon class="me-2" :icon="['fas', 'layer-group']" />
+          <span>Products</span>
+        </el-menu-item>
+        <el-menu-item index="4">
+          <font-awesome-icon class="me-2" :icon="['fas', 'gears']" />
+          <span>Settings</span>
+        </el-menu-item>
+      </el-menu>
+    </el-col>
+  </el-row>
+</template>
