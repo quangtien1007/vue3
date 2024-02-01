@@ -1,29 +1,19 @@
 <template>
-    <a-card title="Users" style="width: 100%">
+    <a-card title="Users">
+        <!-- <h1>asd</h1> -->
+        <!-- <span>
+            <el-button type="primary" class="mb-3 p-3">
+                <h1>CREATE ACCOUNT</h1>
+            </el-button>
+        </span>
         <div class="row">
-            <div key="admin-users-create" class="mb-4" wrap>
-                <router-link :to="{ name: 'admin-users-create' }">
-                    <a-button type="primary">Add user</a-button>
-                </router-link>
-            </div>
-            <div class="col-12 d-flex w-100 align-items-center">
-                <!-- chung ta cua hien tai test -->
-                <!-- <a-table :dataSource="users" :columns="columns">
-            <template #bodyCell="{ column, index, record }"> </template>
-          </a-table> -->
-                <el-card style="object-fit:cover" v-for="item in cats" class="col-md-2 image-container">
-                    <img style="height: 150px;" class="w-100 image-item" :src="item.url" alt="">
-                    <!-- </div> -->
-                </el-card>
-                
-            </div>
-            <div class="col-12">
-                <el-card style="object-fit:cover" v-for="item in catsFact" class="col-md-12 text-center image-container">
-                    <h1>{{item}}</h1>
-                    <!-- </div> -->
-                </el-card>
-            </div>
-        </div>
+            <el-form :model="form" label-width="120px">
+                <el-form-item label="Activity name">
+                    <el-input />
+                  </el-form-item>
+
+            </el-form>
+        </div> -->
     </a-card>
 </template>
 <style>

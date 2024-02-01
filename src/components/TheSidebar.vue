@@ -1,6 +1,6 @@
 <template>
   <el-row class="">
-    <el-col :span="18">
+    <el-col :span="24">
       <el-col class="text-center" style="cursor:pointer">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
       </el-col>
@@ -12,7 +12,7 @@
               <span>Account</span>
             <!-- </router-link> -->
           </template>
-          <router-link :to="{ name: 'admin-users' }">
+          <router-link style="text-decoration: none;" :to="{ name: 'admin-users-create' }">
             <el-menu-item index="1-1"> 
               <font-awesome-icon class="me-2" :icon="['fas', 'user-plus']" />
               Create account
@@ -27,10 +27,12 @@
             Settings
           </el-menu-item>
         </el-sub-menu>
+        <router-link style="text-decoration: none;" :to="{ name: 'admin-users' }">
         <el-menu-item index="2">  
           <font-awesome-icon class="me-2" :icon="['fas', 'user-gear']" />
           <span>Users</span>
         </el-menu-item>
+        </router-link>
         <el-menu-item index="3">
           <font-awesome-icon class="me-2" :icon="['fas', 'layer-group']" />
           <span>Products</span>

@@ -1,9 +1,9 @@
 <template>
     <div class="row container-fluid">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
             <TheSidebar />
         </div>
-        <div class="col-sm-9"> 
+        <div class="col-sm-10"> 
             <router-view></router-view>
         </div>
     </div>
