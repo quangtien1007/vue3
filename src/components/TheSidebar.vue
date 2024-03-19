@@ -4,7 +4,13 @@
       <el-col class="text-center" style="cursor:pointer">
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
       </el-col>
-      <el-menu default-active="2" class="el-menu-vertical-demo" >
+      <el-menu default-active="0" class="el-menu-vertical-demo" >
+        <router-link style="text-decoration: none;" :to="{ name: 'admin-dashboard' }">
+        <el-menu-item index="0">
+          <font-awesome-icon class="me-2" :icon="['fas', 'chart-simple']" />
+          <span>Dashboard</span>
+        </el-menu-item>
+        </router-link>
         <el-sub-menu index="1">
           <template #title>
             <!-- <router-link ">Home -->

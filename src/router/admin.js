@@ -13,11 +13,11 @@ const admin = [
         name: 'admin-users-create',
         component: () => import('../pages/admin/users/create.vue')
       },
-      // {
-      //   path: 'services',
-      //   name: 'admin-services',
-      //   component: () => import('../pages/admin/services/index.vue')
-      // },
+      {
+        path: 'dashboard',
+        name: 'admin-dashboard',
+        component: () => import('../pages/admin/dashboard.vue')
+      },
       // {
       //   path: 'settings',
       //   name: 'admin-settings',
